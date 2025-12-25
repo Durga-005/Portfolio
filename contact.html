@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="contact.css">
+
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("JjbqQ-zXWe6tAWXtg");
+        })();
+    </script>
+</head>
+<body>
+
+<section class="contact-container">
+    <div class="contact-box">
+
+        <!-- LEFT INFO -->
+        <div class="contact-info">
+            <h2>Let's <span>Connect</span></h2>
+            <p>Feel free to reach out. I’ll respond as soon as possible.</p>
+
+            <div class="info-item">
+                <i class="bx bx-envelope"></i>
+                <span>durgarajait@gmail.com</span>
+            </div>
+
+            <div class="info-item">
+                <i class="bx bx-phone"></i>
+                <span>+91 7010482018</span>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="bx bxl-linkedin"></i></a>
+                <a href="#"><i class="bx bxl-github"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- RIGHT FORM -->
+        <form class="contact-form" id="contactForm">
+            <h2>Send a <span>Message</span></h2>
+
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="subject" placeholder="Subject" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+            <p id="status"></p>
+        </form>
+
+    </div>
+</section>
+
+<script src="contact.js"></script>
+</body>
+</html>
